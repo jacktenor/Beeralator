@@ -23,10 +23,10 @@ int main()
 	float cases = 0;
 	float totalcaseprice = 0;
 	float doorfee = 0;
-	float cost = 0;
+	double cost = 0;
 	float bottles = 0;
-	float bottlesprice = 0;
-        float totalcost = 0;
+	double bottlesprice = 0;
+    double totalcost = 0;
         cout << "" << endl;
         cout << "" << endl;
         SetColor(2);
@@ -180,7 +180,7 @@ int main()
 		{
 		cout << "Bring on the coma!" << endl;
 		}
-		if (beersperhour <= 2)
+		if (beersperhour == 2)
 		{
 		cout << "What a bunch of lightweights!" << endl;
 		}
@@ -288,33 +288,35 @@ int main()
 		cost = totalcaseprice - (people * doorfee);
 		totalcost = cost + totalpricebottles;
                 cout <<  "" << endl;
-		SetColor(3);
+		SetColor(15);
 		cout << "You will need ";
-		SetColor(2);
+		SetColor(10);
 		cout << setprecision(0) << ceil(totalcases);
-		SetColor(3);
+		SetColor(15);
 		cout << " cases for the night." << endl;
   	        if (totalcost >= 1)
 	        {
                 cout << "Your cost will be ";
-       	        SetColor(4);    
+       	        SetColor(12);    
                 cout << "$" << fixed << setprecision(2) << totalcost;
-                SetColor(3);
+                SetColor(15);
                 cout << " dollars." << endl;
 	        }
 	        if (totalcost <= 0)
 	        {
                 cout << "You will make ";
-                SetColor(2);
+                SetColor(10);
                 cout << "$" << fixed << setprecision(2) << abs(totalcost);
-                SetColor(3);
+                SetColor(15);
         	cout << " dollars." << endl;
 	    	}
         	cout << "" << endl;	    
 		SetColor(10);
-	        cout << "Do you need to recalculate? If not enjoy your night and stay safe. (y/n) ";
+	        cout << "If your cases number is garbled (bug) answer y to rerun." << endl;
+            cout << "If not enjoy your night and stay safe. (y/n) ";
 		cin >> rerun;
 		}
 		while (rerun == 'y' || rerun == 'Y');
 		return 0;
 }
+
