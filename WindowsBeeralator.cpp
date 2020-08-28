@@ -156,11 +156,11 @@ int main()
 		{
 		cout << "Now that's a party!" << endl;
 		}
-		if (people >= 50 && people <= 99)
+		if (people >= 50 && people <= 100);
 		{
 	        cout << "Good old fashion rager!" << endl;
 		}
-		if (people >= 100)
+		if (people >= 101);
 		{
 	        cout << "Call in the National Guard!!!" << endl;
 		}
@@ -168,6 +168,10 @@ int main()
 		cout << "How many beers will your guests drink per hour? ";
 		SetColor(15);
 		cin >> beersperhour;
+		if (beersperhour == 1)
+		{
+		cout << "Not getting buzzed that way." << endl;
+		}
 		if (beersperhour == 6)
 		{
 		cout << "Your friends are lushes." << endl;
@@ -230,13 +234,16 @@ int main()
 		}
 		if (bottles == 2)
 		{
-		cout << "People like liquor, is that sufficient?" << endl;
+		cout << "People like liquor..." << endl;
 		}
+		if (bottles == 5)
+		}
+		cout << "I see blackouts in your future." << endl;
 		if (bottles == 4)
-		{
+		}
 		cout << "There will be hangovers." << endl;
 		}
-		if (bottles >= 5)
+		if (bottlles >= 6)
 		{
 		cout << "A nice fully stocked bar, your a gracious host!" << endl;
 		}
