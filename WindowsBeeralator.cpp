@@ -241,7 +241,7 @@ int main()
 		cout << "I see blackouts in your future." << endl;
                 }
 		if (bottles == 4)
-		}
+		{
 		cout << "There will be hangovers." << endl;
 		}
 		if (bottlles >= 6)
