@@ -160,7 +160,7 @@ int main()
 		{
 	        cout << "Good old fashion rager!" << endl;
 		}
-		if (people >= 101);
+		if (people <= 101);
 		{
 	        cout << "Call in the National Guard!!!" << endl;
 		}
