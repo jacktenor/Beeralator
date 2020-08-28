@@ -2,9 +2,8 @@
 #include <iostream>
 #include <cmath>
 #include <iomanip>
-#include "windows.h"
+#include <windows.h>
 #include <conio.h> 
-
 using namespace std;
 void SetColor(int value) {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), value);
@@ -15,24 +14,33 @@ int main()
 	char rerun;
 	do
 	{
-		float people = 0, hours = 0;
-		float totalpricebottles = 0;
-		float price = 0;
-		float beersperhour = 0;
-		float peoplehours = 0;
-		float totalcases = 0;
-		float cases = 0;
-		float totalcaseprice = 0;
-		float doorfee = 0;
-		float cost = 0;
-		float bottles = 0;
-		float bottlesprice = 0;
+	float people = 0, hours = 0;
+	float totalpricebottles = 0;
+	float price = 0;
+	float beersperhour = 0;
+	float peoplehours = 0;
+	float totalcases = 0;
+	float cases = 0;
+	float totalcaseprice = 0;
+	float doorfee = 0;
+	float cost = 0;
+	float bottles = 0;
+	float bottlesprice = 0;
         float totalcost = 0;
-		cout << "" << endl;
-		SetColor(13);
-		cout << "Welcome to the Beeralator..." << endl;
-		cout << "" << endl;
-		SetColor(15);
+        cout << "" << endl;
+        cout << "" << endl;
+        SetColor(2);
+        cout << "Welcome to the...";
+        SetColor(5);
+        cout << R"(
+    ____                       __      __            
+   / __ )___  ___  _________ _/ ____ _/ /_____  _____
+  / __  / _ \/ _ \/ ___/ __ `/ / __ `/ __/ __ \/ ___/
+ / /_/ /  __/  __/ /  / /_/ / / /_/ / /_/ /_/ / /    
+/_____/\___/\___/_/   \__,_/_/\__,_/\__/\____/_/     
+        )" << endl;
+                cout << "" << endl;
+                SetColor(15);
 		cout << "Let's calculate your evening beer requirements..." << endl;
 		cout << "Note: 1 required case will be subtracted for each bottle purchased." << endl;
 		cout << "" << endl;
@@ -42,7 +50,75 @@ int main()
 		cin >> doorfee;
 		if (doorfee == 0)
 		{
-		cout << "FREE BEER!!!" << endl;
+                SetColor(2);   
+		cout << "F"; 
+		SetColor(4);
+		cout << "R";
+                SetColor(3);   
+		cout << "E"; 
+		SetColor(14);
+		cout << "E"; 
+                cout << " ";
+                SetColor(3);   
+		cout << "B"; 
+		SetColor(4);
+		cout << "E"; 
+                SetColor(2);   
+		cout << "E"; 
+		SetColor(14);
+		cout << "R"; 
+                SetColor(2);   
+		cout << "!"; 
+		SetColor(4);
+		cout << "!";
+                SetColor(14);
+		cout << "!" << endl;
+                SetColor(2);   
+		cout << "	F"; 
+		SetColor(4);
+		cout << "R";
+                SetColor(3);   
+		cout << "E"; 
+		SetColor(14);
+		cout << "E"; 
+                cout <<	" ";
+                SetColor(3);   
+		cout << "B"; 
+		SetColor(4);
+		cout << "E"; 
+                SetColor(2);   
+		cout << "E"; 
+		SetColor(14);
+		cout << "R"; 
+                SetColor(2);   
+		cout << "!"; 
+		SetColor(4);
+		cout << "!";
+                SetColor(14);
+		cout << "!" << endl;
+                SetColor(2);   
+		cout << "		F"; 
+		SetColor(4);
+		cout << "R";
+                SetColor(3);   
+		cout << "E"; 
+		SetColor(14);
+		cout << "E"; 
+                cout << " ";
+                SetColor(2);   
+		cout << "B"; 
+		SetColor(4);
+		cout << "E"; 
+                SetColor(3);   
+		cout << "E"; 
+		SetColor(14);
+		cout << "R"; 
+                SetColor(2);   
+		cout << "!"; 
+		SetColor(4);
+		cout << "!";
+                SetColor(14);
+		cout << "!" << endl;
 		}
 		if (doorfee >= 1 && doorfee <= 4)
 		{
@@ -203,32 +279,30 @@ int main()
 		totalcaseprice = ceil(totalcases) * price;
 		cost = totalcaseprice - (people * doorfee);
 		totalcost = cost + totalpricebottles;
-        cout << 
-             "" << endl;
+                cout <<  "" << endl;
 		SetColor(3);
 		cout << "You will need ";
 		SetColor(2);
 		cout << setprecision(0) << ceil(totalcases);
 		SetColor(3);
 		cout << " cases for the night." << endl;
-  	    if (totalcost >= 1)
-	    {
-        cout << "Your cost will be ";
-        SetColor(4);    
-        cout << "$" << fixed << setprecision(2) << totalcost;
-        SetColor(3);
-        cout << " dollars." << endl;
-	    }
-	    if (totalcost <= 0)
-	    {
-        cout << "You will make ";
-        SetColor(2);
-        cout << "$" << fixed << setprecision(2) << abs(totalcost);
-        SetColor(3);
-        cout << " dollars." << endl;
-	    }
-        cout << 
-             "" << endl;	    
+  	        if (totalcost >= 1)
+	        {
+                cout << "Your cost will be ";
+       	        SetColor(4);    
+                cout << "$" << fixed << setprecision(2) << totalcost;
+                SetColor(3);
+                cout << " dollars." << endl;
+	        }
+	        if (totalcost <= 0)
+	        {
+                cout << "You will make ";
+                SetColor(2);
+                cout << "$" << fixed << setprecision(2) << abs(totalcost);
+                SetColor(3);
+        	cout << " dollars." << endl;
+	    	}
+        	cout << "" << endl;	    
 		SetColor(10);
 	        cout << "Do you need to recalculate? If not enjoy your night and stay safe. (y/n) ";
 		cin >> rerun;
