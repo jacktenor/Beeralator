@@ -156,11 +156,11 @@ int main()
 		{
 		cout << "Now that's a party!" << endl;
 		}
-		if (people >= 50 && people <= 100);
+		if (people >= 50 && people <= 100)
 		{
 	        cout << "Good old fashion rager!" << endl;
 		}
-		if (people <= 101);
+		if (people >= 101)
 		{
 	        cout << "Call in the National Guard!!!" << endl;
 		}
