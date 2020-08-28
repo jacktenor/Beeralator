@@ -244,7 +244,7 @@ int main()
 		{
 		cout << "There will be hangovers." << endl;
 		}
-		if (bottlles >= 6)
+		if (bottles >= 6)
 		{
 		cout << "A nice fully stocked bar, your a gracious host!" << endl;
 		}
