@@ -224,7 +224,7 @@ int main()
 		cout << "How many bottles will you purchase? ";
 		SetColor(15);
 		cin >> bottles;
-		if (bottles == 1)
+		if (bottles <= 1)
 		{
 		cout << "You need to get a couple bottles man." << endl;
 		}
@@ -239,6 +239,7 @@ int main()
 		if (bottles == 5)
 		}
 		cout << "I see blackouts in your future." << endl;
+		)
 		if (bottles == 4)
 		}
 		cout << "There will be hangovers." << endl;
