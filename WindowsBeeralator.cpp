@@ -237,9 +237,9 @@ int main()
 		cout << "People like liquor..." << endl;
 		}
 		if (bottles == 5)
-		}
+		{
 		cout << "I see blackouts in your future." << endl;
-		)
+                }
 		if (bottles == 4)
 		}
 		cout << "There will be hangovers." << endl;
