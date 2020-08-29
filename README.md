@@ -13,7 +13,7 @@ For Aarch64 (Untested)
 
  aarch64-linux-gnu-g++ -static LinuxBeeralator.cpp -o beeralator
 
-For Windows, If you want an app icon I run these two.
+For Windows, If you want an app icon I ran these two.
 
  i686-w64-mingw32-windres icon2.rc -O coff -o icon2.res 
 
@@ -21,7 +21,7 @@ For Windows, If you want an app icon I run these two.
 
 icon2.rc contents point to the icon, for example: id ICON "/path/to/beer2.ico" 
  
-Using Windows with msys2 these two.
+Using Windows with Msys2 I used these two.
  
  windres icon2.rc -O coff -o icon2.res 
 
