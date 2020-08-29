@@ -1,17 +1,8 @@
 #include <iostream>
 #include <cmath>
 #include <iomanip>
-#define RESET   "\033[0m"
-#define BLACK   "\033[30m"      /* Black */
-#define RED     "\033[31m"      /* Red */
-#define GREEN   "\033[32m"      /* Green */
-#define BLUE    "\033[34m"      /* Blue */
-#define CYAN    "\033[36m"      /* Cyan */
-#define BOLDRED     "\033[1m\033[31m"      /* Bold Red */
-#define BOLDGREEN   "\033[1m\033[32m"      /* Bold Green */
-#define BOLDBLUE    "\033[1m\033[34m"      /* Bold Blue */
-#define BOLDCYAN    "\033[1m\033[36m"      /* Bold Cyan */
-#define BOLDWHITE   "\033[1m\033[37m"      /* Bold White */
+#define YELLOW      "\033[33m"             /* Yellow */
+#define BOLDMAGENTA "\033[1m\033[35m"      /* Bold Magenta */
 #define BRIGHTWHITE "\u001b[37;1m"         /* Bright White */
 #define BRIGHTBLUE  "\u001b[34;1m"         /* Bright Blue */
 #define BRIGHTRED   "\u001b[31;1m"         /* Bright RED */
@@ -24,26 +15,31 @@ int main()
 char rerun;
 		do
 		{
-	float people = 0, hours = 0;
-	float totalpricebottles = 0;
-	float price = 0;
+	int people = 0, hours = 0;
+	double totalpricebottles = 0;
+	double price = 0;
 	float beersperhour = 0;
 	float peoplehours = 0;
 	float totalcases = 0;
 	float cases = 0;
-	float totalcaseprice = 0;
+	double totalcaseprice = 0;
 	float doorfee = 0;
-	float cost = 0;
-	float bottles = 0;
-	float bottlesprice = 0;
-	float totalcost = 0;
-    cout << endl
-         << "";
-	cout << BOLDBLUE << BRIGHTBLUE << "Welcome to the Beeralator!";
-    cout << endl
-         << "";
-	cout << endl
-		 << BRIGHTWHITE << "Let's calculate your evening beer requirements...";
+	double cost = 0;
+	int bottles = 0;
+	double bottlesprice = 0;
+	double totalcost = 0;
+    	cout << "" << endl;
+    	cout << "" << endl;
+    	cout << BRIGHTGREEN << "Welcome to the ...";
+    	cout << BOLDMAGENTA << R"(
+    ____                       __      __            
+   / __ )___  ___  _________ _/ ____ _/ /_____  _____
+  / __  / _ \/ _ \/ ___/ __ `/ / __ `/ __/ __ \/ ___/
+ / /_/ /  __/  __/ /  / /_/ / / /_/ / /_/ /_/ / /    
+/_____/\___/\___/_/   \__,_/_/\__,_/\__/\____/_/     
+        )" << endl;
+    	cout << "" << endl;
+    	cout << BRIGHTWHITE << "Let's calculate your evening beer requirements...";
 	cout << endl
 		 << "Note: 1 required case will be subtracted for each bottle purchased.";
 	cout << endl
@@ -52,10 +48,20 @@ char rerun;
 		 << "How much are you charging at the door? ";
 	cin >> doorfee;
 	if (doorfee == 0)
-	{
-		cout << endl
-		  << BRIGHTWHITE << "FREE BEER!!!" << endl;
-	}	
+	{;   
+	cout << BRIGHTRED << "F"; 
+	cout << BRIGHTBLUE << "R"; 
+	cout << YELLOW << "E"; 
+	cout << BRIGHTCYAN << "E"; 
+    	cout << " "; 
+	cout << BRIGHTGREEN << "B";
+	cout << BRIGHTRED << "E"; 
+	cout << YELLOW << "E"; 
+	cout << BRIGHTCYAN << "R"; 
+	cout << YELLOW << "!"; 
+	cout << BRIGHTRED << "!"; 
+	cout << BRIGHTCYAN << "!" << endl;
+	}
 	if (doorfee >= 1 && doorfee <= 4)
 	{
 		cout << endl
@@ -241,24 +247,23 @@ char rerun;
 	totalcaseprice = ceil(totalcases) * price;
 	cost = totalcaseprice - (people * doorfee);
 	totalcost = cost + totalpricebottles;
-    cout << endl
-          << "" << endl;
-	cout << BRIGHTCYAN << endl
-		 << "You will need " << BRIGHTGREEN << fixed << setprecision(0) << ceil(totalcases) << BRIGHTCYAN << " cases for the night.";
+    	cout << "" << endl;
+	cout << BRIGHTWHITE << endl
+		 << "You will need " << BRIGHTGREEN << fixed << setprecision(0) << ceil(totalcases) << BRIGHTWHITE << " cases for the night.";
 	cout << endl;
 	if (totalcost >= 1)
 	{
-		cout << endl
-            << "Your cost will be " << fixed << setprecision(2) << BRIGHTRED << totalcost << BRIGHTCYAN << " dollars."; 
+	cout << endl
+            << "Your cost will be " << fixed << setprecision(2) << BRIGHTRED << totalcost << BRIGHTWHITE << " dollars."; 
 	}
 	if (totalcost <= 0)
 	{
-		cout << endl
-            << "You will make " << fixed << setprecision(2) << BRIGHTGREEN << abs(totalcost) << BRIGHTCYAN << " dollars.";
+	cout << endl
+            << "You will make " << fixed << setprecision(2) << BRIGHTGREEN << abs(totalcost) << BRIGHTWHITE << " dollars.";
 	}
-    cout << endl
+    	cout << endl
         << "" << endl; 
-     cout << endl << BRIGHTGREEN << "Do you need to recalculate? " << BRIGHTWHITE << "(y/n). " << BRIGHTGREEN << "If not enjoy your night. Stay safe! " << BRIGHTWHITE;
+     	cout << endl << BRIGHTGREEN << "Do you need to recalculate? " << BRIGHTWHITE << "(y/n). " << BRIGHTGREEN << "If not enjoy your night. Stay safe! " << BRIGHTWHITE;
 		cin >> rerun;
 		}
         while (rerun == 'y' || rerun == 'Y');
