@@ -1,6 +1,0 @@
-#/bin/bash
-sudo apt install adb fastboot
-adb root
-adb remount
-adb push beeralator /system/bin
-adb shell chmod 755 /system/bin/beeralator
