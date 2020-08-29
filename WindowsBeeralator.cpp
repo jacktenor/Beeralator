@@ -14,11 +14,11 @@ int main()
 	char rerun;
 	do
 	{
-	float people = 0, hours = 0;
+	double people = 0, hours = 0;
 	double long totalpricebottles = 0;
 	double long price = 0;
 	float beersperhour = 0;
-	float peoplehours = 0;
+	double peoplehours = 0;
 	double long totalcases = 0;
 	double long cases = 0;
 	double long totalcaseprice = 0;
@@ -26,7 +26,7 @@ int main()
 	double long cost = 0;
 	float bottles = 0;
 	double long bottlesprice = 0;
-    double long totalcost = 0;
+    	double long totalcost = 0;
         cout << "" << endl;
         cout << "" << endl;
         SetColor(2);
@@ -287,37 +287,36 @@ int main()
 		totalcaseprice = ceil(totalcases) * price;
 		cost = totalcaseprice - (people * doorfee);
 		totalcost = cost + totalpricebottles;
-        cout <<  "" << endl;
+       	        cout <<  "" << endl;
 		SetColor(15);
 		cout << "You will need ";
 		SetColor(10);
 		cout << fixed << setprecision(0) << ceil(totalcases);
 		SetColor(15);
 		cout << " cases for the night." << endl;
-  	    if (totalcost >= 1)
-	    {
-        cout << "Your cost will be ";
-       	SetColor(12);    
-        cout << "$" << fixed << setprecision(2) << totalcost;
-        SetColor(15);
-        cout << " dollars." << endl;
-	    }
-	    if (totalcost <= 0)
-	    {
-        cout << "You will make ";
-        SetColor(10);
-        cout << "$" << fixed << setprecision(2) << abs(totalcost);
-        SetColor(15);
-        cout << " dollars." << endl;
-	    }
-        cout << "" << endl;	    
+  	        if (totalcost >= 1)
+	    	{
+        	cout << "Your cost will be ";
+       		SetColor(12);    
+        	cout << "$" << fixed << setprecision(2) << totalcost;
+        	SetColor(15);
+        	cout << " dollars." << endl;
+	    	}
+	    	if (totalcost <= 0)
+	    	{
+        	cout << "You will make ";
+        	SetColor(10);
+        	cout << "$" << fixed << setprecision(2) << abs(totalcost);
+        	SetColor(15);
+        	cout << " dollars." << endl;
+	    	}
+        	cout << "" << endl;	    
 		SetColor(10);
-	    cout << "Do you need to recalculate? If not enjoy your night and stay safe. ";
+	    	cout << "Do you need to recalculate? If not enjoy your night and stay safe. ";
 		SetColor(15);
-        cout << "(y/n) " << endl;
+        	cout << "(y/n) " << endl;
 		cin >> rerun;
 		}
 		while (rerun == 'y' || rerun == 'Y');
 		return 0;
 }
-
