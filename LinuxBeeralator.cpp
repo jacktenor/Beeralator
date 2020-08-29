@@ -11,11 +11,11 @@
 
 using namespace std;                        
 int main()
-{
-char rerun;
+	{
+	char rerun;
 		do
 		{
-	int people = 0, hours = 0;
+	float people = 0, hours = 0;
 	double totalpricebottles = 0;
 	double price = 0;
 	float beersperhour = 0;
@@ -25,7 +25,7 @@ char rerun;
 	double totalcaseprice = 0;
 	float doorfee = 0;
 	double cost = 0;
-	int bottles = 0;
+	float bottles = 0;
 	double bottlesprice = 0;
 	double totalcost = 0;
     	cout << "" << endl;
@@ -48,7 +48,7 @@ char rerun;
 		 << "How much are you charging at the door? ";
 	cin >> doorfee;
 	if (doorfee == 0)
-	{;   
+	{   
 	cout << BRIGHTRED << "F"; 
 	cout << BRIGHTBLUE << "R"; 
 	cout << YELLOW << "E"; 
@@ -247,7 +247,7 @@ char rerun;
 	totalcaseprice = ceil(totalcases) * price;
 	cost = totalcaseprice - (people * doorfee);
 	totalcost = cost + totalpricebottles;
-    	cout << "" << endl;
+    cout << "" << endl;
 	cout << BRIGHTWHITE << endl
 		 << "You will need " << BRIGHTGREEN << fixed << setprecision(0) << ceil(totalcases) << BRIGHTWHITE << " cases for the night.";
 	cout << endl;
@@ -261,11 +261,11 @@ char rerun;
 	cout << endl
             << "You will make " << fixed << setprecision(2) << BRIGHTGREEN << abs(totalcost) << BRIGHTWHITE << " dollars.";
 	}
-    	cout << endl
+    cout << endl
         << "" << endl; 
-     	cout << endl << BRIGHTGREEN << "Do you need to recalculate? " << BRIGHTWHITE << "(y/n). " << BRIGHTGREEN << "If not enjoy your night. Stay safe! " << BRIGHTWHITE;
-		cin >> rerun;
-		}
-        while (rerun == 'y' || rerun == 'Y');
+    cout << endl << BRIGHTGREEN << "Do you need to recalculate? " << BRIGHTWHITE << "(y/n). " << BRIGHTGREEN << "If not enjoy your night. Stay safe! " << BRIGHTWHITE;
+    cin >> rerun;
+    }
+    while (rerun == 'y' || rerun == 'Y');
 	return 0;
 }
