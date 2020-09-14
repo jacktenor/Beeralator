@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <iomanip>
+#include <locale>
 #define YELLOW      "\033[33m"             /* Yellow */
 #define BOLDMAGENTA "\033[1m\033[35m"      /* Bold Magenta */
 #define BRIGHTWHITE "\u001b[37;1m"         /* Bright White */
@@ -16,18 +17,18 @@ int main()
 		do
 		{
 	float people = 0, hours = 0;
-	double totalpricebottles = 0;
-	double price = 0;
+	double long totalpricebottles = 0;
+	double long price = 0;
 	float beersperhour = 0;
 	float peoplehours = 0;
-	float totalcases = 0;
-	float cases = 0;
+	double long totalcases = 0;
+	double long cases = 0;
 	double totalcaseprice = 0;
 	float doorfee = 0;
-	double cost = 0;
-	float bottles = 0;
-	double bottlesprice = 0;
-	double totalcost = 0;
+	double long cost = 0;
+	double long bottles = 0;
+	double long bottlesprice = 0;
+	double long totalcost = 0;
     	cout << "" << endl;
     	cout << "" << endl;
     	cout << BRIGHTGREEN << "Welcome to the ...";
@@ -50,7 +51,7 @@ int main()
 	if (doorfee == 0)
 	{   
 	cout << BRIGHTRED << "F"; 
-	cout << BRIGHTBLUE << "R"; 
+	cout << BRIGHTBLUE << "R"; comabeer
 	cout << YELLOW << "E"; 
 	cout << BRIGHTCYAN << "E"; 
     	cout << " "; 
@@ -248,18 +249,18 @@ int main()
 	cost = totalcaseprice - (people * doorfee);
 	totalcost = cost + totalpricebottles;
     cout << "" << endl;
-	cout << BRIGHTWHITE << endl
-		 << "You will need " << BRIGHTGREEN << fixed << setprecision(0) << ceil(totalcases) << BRIGHTWHITE << " cases for the night.";
+    cout.imbue(std::locale(""));
+    cout << "You will need " << BRIGHTGREEN << fixed << setprecision(0) << ceil(totalcases) << BRIGHTWHITE << " cases for the night.";
 	cout << endl;
 	if (totalcost >= 1)
 	{
 	cout << endl
-            << "Your cost will be " << fixed << setprecision(2) << BRIGHTRED << totalcost << BRIGHTWHITE << " dollars."; 
+            << "Your cost will be "  << fixed << setprecision(2) << BRIGHTRED << "$" << totalcost << BRIGHTWHITE << " dollars."; 
 	}
 	if (totalcost <= 0)
 	{
 	cout << endl
-            << "You will make " << fixed << setprecision(2) << BRIGHTGREEN << abs(totalcost) << BRIGHTWHITE << " dollars.";
+            << "You will make " << fixed << setprecision(2) << BRIGHTGREEN << "$" << abs(totalcost) << BRIGHTWHITE << " dollars.";
 	}
     cout << endl
         << "" << endl; 
