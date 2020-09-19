@@ -3,7 +3,7 @@ Calculate your evening beer requirements...
 
 For Beeralator.apk you should be able to load it as a project and build it in Android Studio.
 
-I used Ubuntu to build and for Linux I just used,
+I used Ubuntu to build and for Linux I just used the  command,..
 
  g++ -static LinuxBeeralator.cpp -o beeralator
 
@@ -15,7 +15,7 @@ For Aarch64 (Untested)
 
  aarch64-linux-gnu-g++ -static LinuxBeeralator.cpp -o beeralator
 
-For Windows, If you want an app icon I ran these two.
+For Windows, If you want an app icon I ran these two commands.
 
  i686-w64-mingw32-windres icon2.rc -O coff -o icon2.res 
 
@@ -23,7 +23,7 @@ For Windows, If you want an app icon I ran these two.
 
 icon2.rc contents point to the icon, for example: id ICON "/path/to/beer2.ico" 
  
-Using Windows with Msys2 I used these two.
+Using Windows with Msys2 I used these two commands.
  
  windres icon2.rc -O coff -o icon2.res 
 
