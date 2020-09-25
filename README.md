@@ -1,7 +1,7 @@
 # Beeralator
 Calculate your evening beer requirements...
 
-For Beeralator.apk you should be able to load it as a project and build it in Android Studio.
+For Beeralator.apk you should be able to add beeralator_apk_source as a project and build it in Android Studio.
 
 I used Ubuntu to build and for Linux I just used the  command,..
 
