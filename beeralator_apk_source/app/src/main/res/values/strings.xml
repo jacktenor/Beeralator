@@ -4,6 +4,7 @@
     <string name="calculate">Calculate</string>
     <string name="lets_calculate_your_evening_beer_requirements">Lets calculate your evening beer requirements...</string>
     <string name="welcome_to_the_beeralator">Welcome to the Beeralator!</string>
+    <string name="how_much_will_you_charge_at_the_door">How much will you charge at the door?</string>
     <string name="how_many_hours_will_you_drink">How many hours will you drink?</string>
     <string name="how_many_beers_will_they_drink_per_hour">How many beers will they drink per hour?</string>
     <string name="average_price_per_case">Average price per case?</string>
