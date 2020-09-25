@@ -73,10 +73,10 @@ public class MainActivity extends AppCompatActivity {
         tv_result.setText(String.format(" Required cases = %s", sValue));
 
         if (result2 >= 0) {
-        tv_result2.setText(String.format(" Total dollars spent = %s", sValue2));
+        tv_result2.setText(String.format(" Cost = $%s", sValue2));
     }
         else {
-            tv_result2.setText(String.format(" Profit in dollars = %s", sValue2));
+            tv_result2.setText(String.format(" Profit = $%s", sValue2));
 
         }
 
