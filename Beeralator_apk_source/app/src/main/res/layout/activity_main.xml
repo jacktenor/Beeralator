@@ -27,13 +27,22 @@
         android:text="@string/lets_calculate_your_evening_beer_requirements" />
 
     <EditText
-        android:id="@+id/et_input1"
+        android:id="@+id/et_input5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/how_many_people_will_be_drinking"
-        android:inputType="number"
+        android:hint="How much wil you charge at the door?"
+        android:inputType="numberDecimal|numberSigned"
         android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/how_many_people_will_be_drinking"
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/et_input2"
@@ -48,26 +57,26 @@
         android:id="@+id/et_input3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/how_many_hours_will_you_drink"
-        android:inputType="numberDecimal|numberSigned"
-        android:autofillHints="" />
+        android:inputType="numberDecimal|numberSigned" />
 
     <EditText
         android:id="@+id/et_input4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/average_price_per_case"
-        android:inputType="numberDecimal|numberSigned"
-        android:autofillHints="" />
+        android:inputType="numberDecimal|numberSigned" />
 
     <Button
         android:id="@+id/bt_calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/calculate" />
+        android:text="@string/calculate"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <RelativeLayout
         android:id="@+id/tv_results"
@@ -79,8 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:imeOptions="actionDone" />
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
     </RelativeLayout>
 
