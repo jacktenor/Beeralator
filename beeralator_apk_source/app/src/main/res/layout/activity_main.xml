@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/beer"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/item_detail_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/beer"
     android:gravity="clip_horizontal|center_horizontal"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -26,51 +27,86 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/lets_calculate_your_evening_beer_requirements" />
 
+    <TextView
+        android:id="@+id/tv_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
     <EditText
         android:id="@+id/et_input5"
-        android:layout_width="match_parent"
+        android:layout_width="388dp"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="@string/how_much_will_you_charge_at_the_door"
-        android:inputType="numberDecimal|numberSigned"
-        android:autofillHints="" />
+        android:hint=" how_much_will_you_charge_at_the_door"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <TextView
+        android:id="@+id/tv_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
         android:id="@+id/et_input1"
-        android:layout_width="match_parent"
+        android:layout_width="383dp"
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/how_many_people_will_be_drinking"
+        android:hint=" how_many_people_will_be_drinking"
         android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tv_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
         android:id="@+id/et_input2"
-        android:layout_width="match_parent"
+        android:layout_width="383dp"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="@string/how_many_beers_will_they_drink_per_hour"
-        android:inputType="numberDecimal|numberSigned"
-        android:autofillHints="" />
+        android:hint=" how_many_beers_will_they_drink_per_hour"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <TextView
+        android:id="@+id/tv_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
         android:id="@+id/et_input3"
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/how_many_hours_will_you_drink"
+        android:hint=" how_many_hours_will_you_drink"
         android:inputType="numberDecimal|numberSigned" />
+
+    <TextView
+        android:id="@+id/tv_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
         android:id="@+id/et_input4"
-        android:layout_width="match_parent"
+        android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
-        android:hint="@string/average_price_per_case"
-        android:inputType="numberDecimal|numberSigned"
-        android:imeOptions="actionDone" />
+        android:hint=" average_price_per_case"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal|numberSigned" />
 
     <RelativeLayout
         android:id="@+id/tv_results"
