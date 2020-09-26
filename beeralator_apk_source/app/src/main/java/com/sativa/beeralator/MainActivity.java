@@ -62,18 +62,79 @@ public class MainActivity extends AppCompatActivity {
                     if (doorfee == 0) {
                         tv_textView.setText(" FREE BEER!!!");
                     }
-                    if (people >= 1000) {
-                        tv_textView1.setText(" Call in the National Gaurd!!!");
+                    if (doorfee >= 1 && doorfee <= 11) {
+                        tv_textView.setText(" A reasonable cover charge.");
                     }
-                    if (beersperhour >= 6) {
+                    if (doorfee >= 12 && doorfee <= 21) {
+                        tv_textView.setText(" Maybe should have gone BYOB");
+                    }
+                    if (doorfee >= 22) {
+                        tv_textView.setText(" What is this a fund raiser?");
+                    }
+                    if (people >= 1 && people <= 5) {
+                        tv_textView1.setText(" No friends?");
+                    }
+                    if (people >= 6 && people <=19) {
+                        tv_textView1.setText(" A social  gathering.");
+                    }
+                    if (people >= 20 && people <= 50) {
+                        tv_textView1.setText(" Now that's a party!");
+                    }
+                    if (people >= 51 && people <= 99) {
+                        tv_textView1.setText(" A rager!");
+                    }
+                    if (people >= 100 && people <= 999) {
+                        tv_textView1.setText(" It's not a party, It's an event!");
+                    }
+                    if (people >= 1000) {
+                        tv_textView1.setText(" Call in the National Guard!!!");
+                    }
+                    if (beersperhour >= 1 && beersperhour <= 2) {
+                        tv_textView2.setText(" Not going to get a buzz at that rate.");
+                    }
+                    if (beersperhour == 3) {
+                        tv_textView2.setText(" Sip, sip.");
+                    }
+                    if (beersperhour == 4) {
+                        tv_textView2.setText(" A nice steady pace.");
+                    }
+                    if (beersperhour == 5) {
+                        tv_textView2.setText(" Going to tie one on!");
+                    }
+                    if (beersperhour == 6) {
+                        tv_textView2.setText(" There will be hangovers.");
+                    }
+                    if (beersperhour >= 7) {
                         tv_textView2.setText(" Bring on the coma!");
                     }
-                    if (hours >= 7) {
-                        tv_textView3.setText(" A good old fashion all nighter!");
+                    if (hours >= 1 && hours <= 3) {
+                        tv_textView3.setText(" What is this a brunch?");
+                    }
+                    if (hours >= 4 && hours <= 5) {
+                        tv_textView3.setText(" You will have just gotten started.");
+                    }
+                    if (hours >= 6 && hours <= 7) {
+                        tv_textView3.setText(" Enough time to get good and loose.");
+                    }
+                    if (hours >= 8) {
+                        tv_textView3.setText(" A good old fashion all-nighter!");
+                    }
+                    if (cost >= 0 && cost <= 10) {
+                        tv_textView4.setText(" Cheap beer makes for bad mornings.");
+                    }
+                    if (cost >= 11 && cost <= 14) {
+                        tv_textView4.setText(" Not shelling out the cash for the imports?");
+                    }
+                    if (cost >= 15 && cost <= 21) {
+                        tv_textView4.setText(" Plenty of good choices at that price.");
+                    }
+                    if (cost >= 22 && cost <= 29) {
+                        tv_textView4.setText(" Your spoiling your guests.");
                     }
                     if (cost >= 30) {
                         tv_textView4.setText(" Drinking the good stuff.");
                     }
+
                         String sValue = String.format("%,.0f", result);
                         String sValue2 = String.format("%,.2f", (Math.abs(result2)));
 
@@ -95,4 +156,3 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-
