@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText input5;
@@ -35,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         input3 = findViewById(R.id.et_input3);
         input4 = findViewById(R.id.et_input4);
 
-        EditText edit_txt = findViewById(R.id.et_input4);
+        EditText edit_txt = this.findViewById(R.id.et_input4);
         tv_result = findViewById(R.id.tv_result);
         tv_result2 = findViewById(R.id.tv_result2);
         tv_textView = findViewById(R.id.tv_textView);
@@ -59,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     double cost = Double.parseDouble(input4.getText().toString());
                     double result = (int) Math.ceil(people * beersperhour * hours / 24);
                     double result2 = (result * cost) - contributions;
+
                     if (doorfee == 0) {
                         tv_textView.setText(" FREE BEER!!!");
                     }
@@ -84,13 +87,13 @@ public class MainActivity extends AppCompatActivity {
                         tv_textView1.setText(" A rager!");
                     }
                     if (people >= 100 && people <= 999) {
-                        tv_textView1.setText(" It's not a party, It's an event!");
+                        tv_textView1.setText(" It's not a party, it's an event!");
                     }
                     if (people >= 1000) {
                         tv_textView1.setText(" Call in the National Guard!!!");
                     }
                     if (beersperhour >= 1 && beersperhour <= 2) {
-                        tv_textView2.setText(" Not going to get a buzz at that rate.");
+                        tv_textView2.setText(" Hard to get a buzz at that rate.");
                     }
                     if (beersperhour == 3) {
                         tv_textView2.setText(" Sip, sip.");
@@ -111,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                         tv_textView3.setText(" What is this a brunch?");
                     }
                     if (hours >= 4 && hours <= 5) {
-                        tv_textView3.setText(" You will have just gotten started.");
+                        tv_textView3.setText(" You will be just getting started.");
                     }
                     if (hours >= 6 && hours <= 7) {
                         tv_textView3.setText(" Enough time to get good and loose.");
@@ -120,13 +123,13 @@ public class MainActivity extends AppCompatActivity {
                         tv_textView3.setText(" A good old fashion all-nighter!");
                     }
                     if (cost >= 0 && cost <= 10) {
-                        tv_textView4.setText(" Cheap beer makes for bad mornings.");
+                        tv_textView4.setText(" Cheap beer = bad mornings.");
                     }
                     if (cost >= 11 && cost <= 14) {
-                        tv_textView4.setText(" Not shelling out the cash for the imports?");
+                        tv_textView4.setText(" Not drinking the imports?");
                     }
                     if (cost >= 15 && cost <= 21) {
-                        tv_textView4.setText(" Plenty of good choices at that price.");
+                        tv_textView4.setText(" Some good choices at that price.");
                     }
                     if (cost >= 22 && cost <= 29) {
                         tv_textView4.setText(" Your spoiling your guests.");
@@ -135,8 +138,8 @@ public class MainActivity extends AppCompatActivity {
                         tv_textView4.setText(" Drinking the good stuff.");
                     }
 
-                        String sValue = String.format("%,.0f", result);
-                        String sValue2 = String.format("%,.2f", (Math.abs(result2)));
+                        String sValue = String.format(Locale.US,"%,.0f", result);
+                        String sValue2 = String.format(Locale.US,"%.2f", (Math.abs(result2)));
 
                         tv_result.setText(String.format(" Required cases = %s", sValue));
 
