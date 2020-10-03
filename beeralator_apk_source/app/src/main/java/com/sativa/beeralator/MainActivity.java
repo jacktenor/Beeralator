@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                             tv_textView1.setText(" Now that's a party!");
 
                         if (people >= 100 && people <= 999)
-                            tv_textView1.setText(" Good old fasfion rafer!!!");
+                            tv_textView1.setText(" Good old fasfion rager!!!");
 
                         if (people >= 1000) tv_textView1.setText(" Call in the National Guard!!!");
 
