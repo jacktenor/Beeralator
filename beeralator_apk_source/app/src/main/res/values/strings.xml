@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Beeralator</string>
+    <string name="welcome_to_the_beeralator">Welcome to the Beeralator!</string>
+    <string name="lets_calculate_your_evening_beer_requirements">Lets calculate your evening beer requirements.</string>
+    <string name="what_is_the_door_charge">What is the door charge?</string>
+    <string name="how_many_people_will_drink">How many people will drink?</string>
+    <string name="how_many_beers_per_hour">How many beers per hour?</string>
+    <string name="how_many_hours_will_you_drink">How many hours will you drink?</string>
+    <string name="average_price_per_case">Average price per case?</string>
+</resources>
