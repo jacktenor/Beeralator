@@ -4,12 +4,12 @@ Calculate your evening beer requirements...
 This repo is for personal use. Your welcome to checkout the Beeralator but it is a work in progress        
 by a newbie developer and may contain bugs.
 
-You should be able to build  beeralator_apk_source .apk by using the command...               
+You should be able to build Beeralator.apk by using the command...               
 
 git clone https://github.com/jacktenor/Beeralator                                 
 
 Then from the Android Studio welcome screen choose "Open an Existing Project".                             
-Navigate to and highlight the "beeralator_apk_source"  directory that's within the "Beralator directory you cloned.                      
+Navigate to and highlight the "beeralator_apk_source"  directory that's inside the "Beeralator" directory you cloned.                      
 Click "ok" and after it's imported use the build menu to build it.                             
 I'm sure theres a better way but that worked for me.                                  
 
