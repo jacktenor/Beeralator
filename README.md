@@ -5,7 +5,6 @@ This repo is for personal use. Your welcome to checkout the Beeralator but it is
 by a newbie developer and may contain bugs.
 
 You should be able to build Beeralator.apk by using the command...               
-
 git clone https://github.com/jacktenor/Beeralator                                 
 
 Then from the Android Studio welcome screen choose "Open an Existing Project".                             
