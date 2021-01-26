@@ -13,7 +13,7 @@ Click "ok" and after it's imported use the build menu to build it.
 I'm sure theres a better way but that worked for me.                                  
 
 I used Ubuntu to build the Beeralator console program for Linux by running the command...                                                            
-g++ -static LinuxBeeralator.cpp -o beeralator
+g++ -static LinuxBeeralator.cpp -o beeralator                                                   
 from within the project directoty.
 
 For Armhf                                                                                                      
