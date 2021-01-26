@@ -6,7 +6,7 @@ by a newbie developer and may contain bugs.
 
 For Beeralator.apk you should be able to add beeralator_apk_source as a project and build it in Android Studio.
 
-I used Ubuntu to build it and for Linux I just used these commands...                                                            
+I used Ubuntu to build it and for Linux I just used this command...                                                            
  g++ -static LinuxBeeralator.cpp -o beeralator
 
 For Armhf                                                                                                      
@@ -21,7 +21,7 @@ i686-w64-mingw32-g++ -static WindowsBeeralator.cpp icon2.res -o Beeralator.exe
 icon2.rc contents point to the icon, for example: id ICON "/path/to/beer2.ico" 
  
 Using Windows with Msys2 I used these two commands...                                                 
-windres icon2.rc -O coff -o icon2.res 
+windres icon2.rc -O coff -o icon2.res                                                                                     
 g++ -static WindowsBeeralator.cpp icon2.res -o Beeralator.exe 
 
 I know very little about all this so if anyone can improve on this please do.
