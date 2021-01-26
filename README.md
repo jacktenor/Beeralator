@@ -14,7 +14,7 @@ I'm sure theres a better way but that worked for me.
 
 I used Ubuntu to build the Beeralator console program for Linux by running the command...                                                            
 g++ -static LinuxBeeralator.cpp -o beeralator                                                   
-from within the project directoty.
+from within the project directoty.                                                         
 
 For Armhf                                                                                                      
 arm-linux-gnueabi-g++ -static LinuxBeeralator.cpp -o beeralator
