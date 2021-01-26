@@ -13,8 +13,9 @@ Navigate to and highlight the "beeralator_apk_source"  directory that's inside t
 Click "ok" and after it's imported use the build menu to build it.                             
 I'm sure theres a better way but that worked for me.                                  
 
-I used Ubuntu to build it and for Linux I just used this command...                                                            
- g++ -static LinuxBeeralator.cpp -o beeralator
+I used Ubuntu to build the Beeralator console program for Linux by running the command...                                                            
+g++ -static LinuxBeeralator.cpp -o beeralator
+from within the project directoty.
 
 For Armhf                                                                                                      
 arm-linux-gnueabi-g++ -static LinuxBeeralator.cpp -o beeralator
@@ -32,8 +33,7 @@ windres icon2.rc -O coff -o icon2.res
 g++ -static WindowsBeeralator.cpp icon2.res -o Beeralator.exe 
 
 I know very little about all this so if anyone can improve on this please do.
-I just put it up because I enjoyed playing with the outputs and thought someone
-else may too.
+
 
 
 
