@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beer"
+    android:gravity="clip_horizontal|center_horizontal">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:text="@string/welcome_to_the_beeralator"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title2"
+        android:layout_width="355dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="@string/lets_calculate_your_evening_beer_requirements"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/covercharge"
+        android:layout_width="285dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:text="@string/what_s_the_cover_charge"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/input"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title2" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/cover"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title2" />
+
+    <TextView
+        android:id="@+id/people"
+        android:layout_width="285dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:text="@string/how_many_people_will_drink"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/input1"
+        app:layout_constraintTop_toBottomOf="@+id/covercharge" />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="@string/people"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+    <TextView
+        android:id="@+id/beers"
+        android:layout_width="285dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/how_many_beers_per_hour"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/input2"
+        app:layout_constraintTop_toBottomOf="@+id/people" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="@string/hours"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input1" />
+
+    <TextView
+        android:id="@+id/hours"
+        android:layout_width="285dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/how_many_hours_will_you_drink"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/input3"
+        app:layout_constraintTop_toBottomOf="@+id/beers" />
+
+    <EditText
+        android:id="@+id/input3"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="@string/beers"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input2" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="285dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/average_price_per_case"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/input4"
+        app:layout_constraintTop_toBottomOf="@+id/hours" />
+
+    <EditText
+        android:id="@+id/input4"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="@string/price"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input3" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="341dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+    <TextView
+        android:id="@+id/result2"
+        android:layout_width="341dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <TextView
+        android:id="@+id/safe"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result2" />
+
+    <TextView
+        android:id="@+id/safe2"
+        android:layout_width="177dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/safe" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
