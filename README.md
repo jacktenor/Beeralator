@@ -32,13 +32,8 @@ windres icon2.rc -O coff -o icon2.res
 g++ -static WindowsBeeralator.cpp icon2.res -o Beeralator.exe 
 
 The .deb file places beeralator in /usr/bin and a beeralator.desktop file                                   
-in /usr/share/applications as well as beer2.ico in /usr/share/icons wich should add a menu entry        
-and icon. Only tested on Linux Mint 20.1.                                   
+in /usr/share/applications as well as beer2.ico in /usr/share/icons. This should add a menu entry        
+and icon. Only tested on Linux Mint 20.1. I Downloaded the file then "cd ~/Downloads" and                     
+"sudo dpkg -i beeralator.1.0-1.deb"                                    
 
 I know very little about all this so if anyone can improve on this please do.
-
-
-
-
-
-
