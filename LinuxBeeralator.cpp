@@ -20,6 +20,8 @@ int main()
 	char rerun;
 		do
 		{
+            
+    setlocale(LC_NUMERIC, "");       
 	float people = 0, hours = 0;
 	double totalpricebottles = 0;
 	double price = 0;
