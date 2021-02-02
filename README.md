@@ -19,7 +19,7 @@ from within the project directoty.
 For Armhf                                                                                                      
 arm-linux-gnueabi-g++ -static LinuxBeeralator.cpp -o beeralator
 
-For Aarch64 (Untested)                                                                                                               
+For Aarch64                                                                                                                                                    
 aarch64-linux-gnu-g++ -static LinuxBeeralator.cpp -o beeralator
 
 For Windows I used these two commands...                                                                                                                      
