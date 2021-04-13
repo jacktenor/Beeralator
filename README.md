@@ -2,7 +2,7 @@
 Calculate your evening beer requirements...
 
 This repo is for personal use. Your welcome to checkout the Beeralator but it is a work in progress        
-by a newbie developer and may contain bugs.
+by a complete begginer, and may contain bugs.
 
 You should be able to build Beeralator.apk by using the command...               
 git clone https://github.com/jacktenor/Beeralator                                 
