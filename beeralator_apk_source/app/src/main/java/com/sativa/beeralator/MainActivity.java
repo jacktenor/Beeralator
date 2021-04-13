@@ -276,9 +276,7 @@ public class MainActivity extends AppCompatActivity {
                                                                                     if (result2 >= 0) {
                                                                                         tv_result2.setText(String.format(" Your cost will be $%s", sValue2));
                                                                                         Toast toast = Toast.makeText(getApplicationContext(),
-                                                                                                "Looks like it's going to cost you.", Toast.LENGTH_LONG);
-                                                                                        toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, -30);
-                                                                                        toast.show();
+                                                                                                "Looks like it's going to cost you.", Toast.LENGTH_LONG);toast.show();
                                                                                         safe.setText(R.string.recalculate);
                                                                                         safe2.setText(R.string.safe);
                                                                                         if (mp[0] != null) {
@@ -292,9 +290,7 @@ public class MainActivity extends AppCompatActivity {
                                                                                        } else {
                                                                                         tv_result2.setText(String.format(" Your profit will be $%s", sValue2));
                                                                                         Toast toast = Toast.makeText(getApplicationContext(),
-                                                                                                "A party and a profit!", Toast.LENGTH_LONG);
-                                                                                        toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, -30);
-                                                                                        toast.show();
+                                                                                                "A party and a profit!", Toast.LENGTH_LONG);toast.show();
                                                                                         safe.setText(R.string.fun);
                                                                                         safe2.setText(R.string.staysafe);
                                                                                         if (mp[0] != null) {
