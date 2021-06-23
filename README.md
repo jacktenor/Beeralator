@@ -19,7 +19,7 @@ from within the project directoty.
 For Armhf                                                                                                      
 arm-linux-gnueabi-g++ -static LinuxBeeralator.cpp -o beeralator
 
-For Aarch64                                                                                                                                                    
+For Aarch64                                                                                    ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)                                                                
 aarch64-linux-gnu-g++ -static LinuxBeeralator.cpp -o beeralator
 
 For Windows I used these two commands...                                                                                                                      
@@ -37,3 +37,5 @@ and icon. Only tested on Linux Mint 20.1.
 Download the file then "cd ~/Downloads" and "sudo dpkg -i beeralator.1.0-1.deb".                                    
 
 I know very little about all this so if anyone can improve on this please do.
+
+![alt text](https://github.com/jacktenor/beeralator/blob/master/beeralator350.jpeg?raw=true)
