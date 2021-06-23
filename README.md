@@ -19,10 +19,10 @@ from within the project directoty.
 For Armhf                                                                                                      
 arm-linux-gnueabi-g++ -static LinuxBeeralator.cpp -o beeralator
 
-For Aarch64                                                                                    ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)                                                                
+For Arm64                                                                
 aarch64-linux-gnu-g++ -static LinuxBeeralator.cpp -o beeralator
 
-For Windows I used these two commands...                                                                                                                      
+For Windows I used these two commands...
 i686-w64-mingw32-windres icon2.rc -O coff -o icon2.res                                                          
 i686-w64-mingw32-g++ -static WindowsBeeralator.cpp icon2.res -o Beeralator.exe                                  
 icon2.rc contents point to the icon, for example: id ICON "/path/to/beer2.ico".
