@@ -39,3 +39,4 @@ Download the file then "cd ~/Downloads" and "sudo dpkg -i beeralator.1.0-1.deb".
 I know very little about all this so if anyone can improve on this please do.
 
 ![alt text](https://github.com/jacktenor/beeralator/blob/master/beeralator350.jpeg?raw=true)
+![alt text](https://github.com/jacktenor/beeralator/blob/master/console.jpg?raw=true)
